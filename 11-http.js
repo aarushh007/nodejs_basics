@@ -1,7 +1,7 @@
 const http = require('http');
 
 const server = http.createServer((req, res)=>{
-    console.log('I got a request on ', req.url)
+    console.log('I got a request on ', req.url, '!')
     switch(req.url){
         case '/':
             res.write('hello engineers');
